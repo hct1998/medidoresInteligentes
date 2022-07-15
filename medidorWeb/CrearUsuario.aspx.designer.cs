@@ -10,7 +10,7 @@
 namespace medidorWeb {
     
     
-    public partial class AgregarUsuarios {
+    public partial class CrearUsuario {
         
         /// <summary>
         /// Control rutTxt.

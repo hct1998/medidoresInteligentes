@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace medidorWeb
 {
-    public partial class AgregarUsuarios : System.Web.UI.Page
+    public partial class CrearUsuario : System.Web.UI.Page
     {
 
         private IUsuarioDAL usuarioDAL = new UsuariosDALDB();
@@ -30,7 +30,7 @@ namespace medidorWeb
             usuarios.correo = this.correoTxt.Text.Trim();
 
             this.usuarioDAL.AgregarUsuarios(usuarios);
-            Response.Redirect("MostrarUsuario.aspx");
+            Response.Redirect("MostrarUsuarios.aspx");
 
         }
 

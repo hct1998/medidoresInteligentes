@@ -1,7 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgregarUsuarios.aspx.cs" Inherits="medidorWeb.AgregarUsuarios" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="CrearUsuario.aspx.cs" Inherits="medidorWeb.CrearUsuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
+     <div class="row">
         <div class="col-lg-6">
             <div class="card">
                 <div class="card-header bg-black text-white">
