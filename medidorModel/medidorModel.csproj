@@ -68,7 +68,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>appmedidorEntities.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DAL\ILecturaDAL.cs" />
+    <Compile Include="DAL\IMedidorDAL.cs" />
     <Compile Include="DAL\IUsuarioDAL.cs" />
     <Compile Include="DAL\LecturaDALDB.cs" />
     <Compile Include="DAL\MedidorDALDB.cs" />

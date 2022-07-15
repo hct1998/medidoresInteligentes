@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace medidorModel.DAL
+namespace medidorModel.DAL 
 {
-    class MedidorDALDB
+    class MedidorDALDB : IMedidorDAL
     {
         private appmedidoresEntities medidorDB = new appmedidoresEntities();
 

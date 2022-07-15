@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace medidorModel.DAL
 {
-    class LecturaDALDB
+    class LecturaDALDB : ILecturaDAL
     {
         private appmedidoresEntities medidorDB = new appmedidoresEntities();
 
@@ -29,7 +29,7 @@ namespace medidorModel.DAL
             return this.medidorDB.Lectura.Find(id_lectura);
         }
 
-        public List<Lectura> ObtennerLectura()
+        public List<Lectura> ObtenerLectura()
         {
             return this.medidorDB.Lectura.ToList();
         }
