@@ -10,12 +10,7 @@ namespace medidorModel.DAL
     {
         private appmedidoresEntities medidorDB = new appmedidoresEntities();
 
-        public void actualizarMedidor(Medidor m)
-        {
-            //Medidor mOriginal = this.medidorDB.usuarios.Find(m.id_medidor);
-        }
-
-
+       
 
         public void AgregarMedidor(Medidor medidor)
         {

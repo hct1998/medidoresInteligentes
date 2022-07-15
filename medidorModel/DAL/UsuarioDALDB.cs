@@ -27,7 +27,23 @@ namespace medidorModel.DAL
             this.medidorDB.SaveChanges();
         }
 
+        public void EliminarUsuarios(int id_usuario)
+        {
+            Usuarios usuarios = this.medidorDB.Usuarios.Find(id_usuario);
 
+            this.medidorDB.Usuarios.Remove(usuarios);
+            this.medidorDB.SaveChanges();
+        }
+
+        public Usuarios Obtener(int id_usuario)
+        {
+            return this.medidorDB.Usuarios.Find(id_usuario);
+        }
+
+        public List<Usuarios> ObtenerUsuarios()
+        {
+            return this.medidorDB.Usuarios.ToList();
+        }
 
     }
 }
