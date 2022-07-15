@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace medidorModel.DAL
 {
-    class UsuarioDALDB : IUsuarioDAL
+    public class UsuariosDALDB : IUsuarioDAL
     {
         private appmedidoresEntities medidorDB = new appmedidoresEntities();
 

@@ -73,7 +73,7 @@
     <Compile Include="DAL\IUsuarioDAL.cs" />
     <Compile Include="DAL\LecturaDALDB.cs" />
     <Compile Include="DAL\MedidorDALDB.cs" />
-    <Compile Include="DAL\UsuarioDALDB.cs" />
+    <Compile Include="DAL\UsuariosDALDB.cs" />
     <Compile Include="Lectura.cs">
       <DependentUpon>appmedidorEntities.tt</DependentUpon>
     </Compile>

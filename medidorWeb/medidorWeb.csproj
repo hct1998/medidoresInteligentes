@@ -74,13 +74,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AgregarUsuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarUsuarios.aspx.cs">
+      <DependentUpon>AgregarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuarios.aspx.designer.cs">
+      <DependentUpon>AgregarUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\medidorModel\medidorModel.csproj">
+      <Project>{99d22285-6e55-4186-b263-c281fa4a2f33}</Project>
+      <Name>medidorModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
