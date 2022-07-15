@@ -8,7 +8,7 @@ namespace medidorModel.DAL
 {
     class MedidorDALDB
     {
-        private medidorappEntities medidorDB = new medidorappEntities();
+        private appmedidoresEntities medidorDB = new appmedidoresEntities();
 
         public void actualizarMedidor(Medidor m)
         {
@@ -19,12 +19,32 @@ namespace medidorModel.DAL
 
         public void AgregarMedidor(Medidor medidor)
         {
-            this.medidorDB.Medidors.Add(medidor);
+            this.medidorDB.Medidor.Add(medidor);
             this.medidorDB.SaveChanges();
 
         }
 
+        public void EliminarMedidor(int id_medidor)
+        {
+            Medidor medidor = this.medidorDB.Medidor.Find(id_medidor);
 
+            this.medidorDB.Medidor.Remove(medidor);
+            this.medidorDB.SaveChanges();
+        }
+
+
+        public Medidor Obtener(int id_medidor)
+        {
+            return this.medidorDB.Medidor.Find(id_medidor);
+               
+        }
+
+        public List<Medidor> ObtenerMedidores()
+        {
+            return this.medidorDB.Medidor.ToList();
+        }
+
+        
         
     }
 }

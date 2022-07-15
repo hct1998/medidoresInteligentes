@@ -14,9 +14,11 @@ namespace medidorModel
     
     public partial class Lectura
     {
-        public string id_lectura { get; set; }
-        public string id_medidor { get; set; }
+        public int id_lectura { get; set; }
+        public Nullable<int> id_medidor { get; set; }
         public byte[] fecha { get; set; }
         public string consumo { get; set; }
+    
+        public virtual Medidor Medidor { get; set; }
     }
 }

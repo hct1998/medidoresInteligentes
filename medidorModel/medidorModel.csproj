@@ -53,45 +53,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="appmedidorEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appmedidorEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="appmedidorEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appmedidorEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="appmedidorEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appmedidorEntities.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="DAL\IUsuarioDAL.cs" />
     <Compile Include="DAL\LecturaDALDB.cs" />
     <Compile Include="DAL\MedidorDALDB.cs" />
     <Compile Include="DAL\UsuarioDALDB.cs" />
     <Compile Include="Lectura.cs">
-      <DependentUpon>medidorModelEntities.tt</DependentUpon>
+      <DependentUpon>appmedidorEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Medidor.cs">
-      <DependentUpon>medidorModelEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="medidorModelEntities.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>medidorModelEntities.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="medidorModelEntities.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>medidorModelEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="medidorModelEntities.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>medidorModelEntities.edmx</DependentUpon>
+      <DependentUpon>appmedidorEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Usuario.cs">
-      <DependentUpon>medidorModelEntities.tt</DependentUpon>
+    <Compile Include="Usuarios.cs">
+      <DependentUpon>appmedidorEntities.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="medidorModelEntities.edmx">
+    <EntityDeploy Include="appmedidorEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>medidorModelEntities.Designer.cs</LastGenOutput>
+      <LastGenOutput>appmedidorEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="medidorModelEntities.edmx.diagram">
-      <DependentUpon>medidorModelEntities.edmx</DependentUpon>
+    <None Include="appmedidorEntities.edmx.diagram">
+      <DependentUpon>appmedidorEntities.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
@@ -99,15 +99,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="medidorModelEntities.Context.tt">
+    <Content Include="appmedidorEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>medidorModelEntities.edmx</DependentUpon>
-      <LastGenOutput>medidorModelEntities.Context.cs</LastGenOutput>
+      <DependentUpon>appmedidorEntities.edmx</DependentUpon>
+      <LastGenOutput>appmedidorEntities.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="medidorModelEntities.tt">
+    <Content Include="appmedidorEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>medidorModelEntities.edmx</DependentUpon>
-      <LastGenOutput>medidorModelEntities.cs</LastGenOutput>
+      <DependentUpon>appmedidorEntities.edmx</DependentUpon>
+      <LastGenOutput>appmedidorEntities.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
