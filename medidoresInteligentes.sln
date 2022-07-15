@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1927
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prueba4", "prueba4\prueba4.csproj", "{8419D3CF-D7ED-42EF-9434-CA96E694FA7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "medidorModel", "medidorModel\medidorModel.csproj", "{99D22285-6E55-4186-B263-C281FA4A2F33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "medidorWeb", "medidorWeb\medidorWeb.csproj", "{91AAE717-9514-4153-80B6-B50CD9E6AFA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8419D3CF-D7ED-42EF-9434-CA96E694FA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8419D3CF-D7ED-42EF-9434-CA96E694FA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8419D3CF-D7ED-42EF-9434-CA96E694FA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8419D3CF-D7ED-42EF-9434-CA96E694FA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D22285-6E55-4186-B263-C281FA4A2F33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D22285-6E55-4186-B263-C281FA4A2F33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D22285-6E55-4186-B263-C281FA4A2F33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D22285-6E55-4186-B263-C281FA4A2F33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91AAE717-9514-4153-80B6-B50CD9E6AFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91AAE717-9514-4153-80B6-B50CD9E6AFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91AAE717-9514-4153-80B6-B50CD9E6AFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91AAE717-9514-4153-80B6-B50CD9E6AFA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
