@@ -74,12 +74,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AgregarLectura.aspx" />
     <Content Include="CrearUsuario.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="MostrarUsuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarLectura.aspx.cs">
+      <DependentUpon>AgregarLectura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarLectura.aspx.designer.cs">
+      <DependentUpon>AgregarLectura.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CrearUsuario.aspx.cs">
       <DependentUpon>CrearUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
