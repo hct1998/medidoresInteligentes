@@ -13,7 +13,7 @@ namespace medidorWeb
     {
         private IUsuarioDAL usuarioDAL = new UsuariosDALDB();
 
-        private void cargaGrilla(List<Usuarios> usuarios)
+        private void cargaGrilla(List<Usuario> usuarios)
         {
             this.grillaUsuario.DataSource = usuarios;
             this.grillaUsuario.DataBind();
@@ -30,24 +30,24 @@ namespace medidorWeb
 
         private void cargaGrilla()
         {
-            List<Usuarios> usuarios;
+            List<Usuario> usuarios;
             {
                 usuarios = this.usuarioDAL.ObtenerUsuarios();
             }
             this.cargaGrilla(usuarios);
         }
 
-        private void grillaUsuario_RowCommand(object sender, GridViewCommandEventArgs e)
+      
+
+        protected void grillaUsuario_RowCommand1(object sender, GridViewCommandEventArgs e)
         {
-            if(e.CommandName == "eliminar")
+            if (e.CommandName == "eliminar")
             {
                 int id_usuario = Convert.ToInt32(e.CommandArgument);
                 this.usuarioDAL.EliminarUsuarios(id_usuario);
                 this.cargaGrilla();
             }
+
         }
-
-
-
     }
 }

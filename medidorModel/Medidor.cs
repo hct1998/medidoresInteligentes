@@ -14,16 +14,7 @@ namespace medidorModel
     
     public partial class Medidor
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Medidor()
-        {
-            this.Lectura = new HashSet<Lectura>();
-        }
-    
         public int id_medidor { get; set; }
-        public string num_medidor { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Lectura> Lectura { get; set; }
+        public Nullable<int> num_medidor { get; set; }
     }
 }

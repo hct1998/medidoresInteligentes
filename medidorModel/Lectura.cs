@@ -18,7 +18,5 @@ namespace medidorModel
         public Nullable<int> id_medidor { get; set; }
         public byte[] fecha { get; set; }
         public string consumo { get; set; }
-    
-        public virtual Medidor Medidor { get; set; }
     }
 }

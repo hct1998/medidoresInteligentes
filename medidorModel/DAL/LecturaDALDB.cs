@@ -8,30 +8,30 @@ namespace medidorModel.DAL
 {
     public class LecturaDALDB : ILecturaDAL
     {
-        private appmedidoresEntities medidorDB = new appmedidoresEntities();
+        private appmedidorEntities medidorDB = new appmedidorEntities();
 
-        public void AgregarLectura(Lectura lectura)
+        public void AgregarLecturas(Lectura lecturas)
         {
-            this.medidorDB.Lectura.Add(lectura);
+            this.medidorDB.Lecturas.Add(lecturas);
             this.medidorDB.SaveChanges();
         }
 
-        public void EliminarLectura(int id_lectura)
+        public void EliminarLecturas(int id_lectura)
         {
-            Lectura lectura = this.medidorDB.Lectura.Find(id_lectura);
+            Lectura lectura = this.medidorDB.Lecturas.Find(id_lectura);
 
-            this.medidorDB.Lectura.Remove(lectura);
+            this.medidorDB.Lecturas.Remove(lectura);
             this.medidorDB.SaveChanges();
         }
 
         public Lectura Obtener(int id_lectura)
         {
-            return this.medidorDB.Lectura.Find(id_lectura);
+            return this.medidorDB.Lecturas.Find(id_lectura);
         }
 
-        public List<Lectura> ObtenerLectura()
+        public List<Lectura> ObtenerLecturas()
         {
-            return this.medidorDB.Lectura.ToList();
+            return this.medidorDB.Lecturas.ToList();
         }
 
 

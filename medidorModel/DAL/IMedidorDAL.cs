@@ -14,7 +14,7 @@ namespace medidorModel.DAL
 
         void EliminarMedidor(int id_medidor);
 
-        void AgregarMedidor(Medidor medidor);
+        void AgregarMedidores(Medidor medidores);
 
 
 

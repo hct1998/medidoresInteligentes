@@ -14,7 +14,7 @@
                         AutoGenerateColumns="false"
                         ShowHeaderWhenEmpty="true"
                         EmptyDataText="No hay registros"
-                        OnRowCommand="grillaUsuario_RowCommand"
+                        OnRowCommand="grillaUsuario_RowCommand1"
                         runat="server">
                         <Columns>
                             <asp:BoundField HeaderText="Nombre" DataField="Nombre" />

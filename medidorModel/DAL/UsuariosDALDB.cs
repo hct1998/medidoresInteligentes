@@ -8,11 +8,11 @@ namespace medidorModel.DAL
 {
     public class UsuariosDALDB : IUsuarioDAL
     {
-        private appmedidoresEntities medidorDB = new appmedidoresEntities();
+        private appmedidorEntities medidorDB = new appmedidorEntities();
 
-        public void Actualizar(Usuarios a)
+        public void Actualizar(Usuario a)
         {
-            Usuarios aOriginal = this.medidorDB.Usuarios.Find(a.id_usuario);
+            Usuario aOriginal = this.medidorDB.Usuarios.Find(a.id_usuario);
             aOriginal.nombre = a.nombre;
             aOriginal.apellido = a.apellido;
             aOriginal.rut = a.rut;
@@ -21,7 +21,7 @@ namespace medidorModel.DAL
             this.medidorDB.SaveChanges();
         }
 
-        public void AgregarUsuarios(Usuarios usuarios)
+        public void AgregarUsuarios(Usuario usuarios)
         {
             this.medidorDB.Usuarios.Add(usuarios);
             this.medidorDB.SaveChanges();
@@ -29,18 +29,18 @@ namespace medidorModel.DAL
 
         public void EliminarUsuarios(int id_usuario)
         {
-            Usuarios usuarios = this.medidorDB.Usuarios.Find(id_usuario);
+            Usuario usuarios = this.medidorDB.Usuarios.Find(id_usuario);
 
             this.medidorDB.Usuarios.Remove(usuarios);
             this.medidorDB.SaveChanges();
         }
 
-        public Usuarios Obtener(int id_usuario)
+        public Usuario Obtener(int id_usuario)
         {
             return this.medidorDB.Usuarios.Find(id_usuario);
         }
 
-        public List<Usuarios> ObtenerUsuarios()
+        public List<Usuario> ObtenerUsuarios()
         {
             return this.medidorDB.Usuarios.ToList();
         }

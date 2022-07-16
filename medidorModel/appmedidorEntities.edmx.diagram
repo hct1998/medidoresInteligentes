@@ -4,11 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6d3768e1c87447e992e42b1705c45e93" Name="Diagram1">
-        <EntityTypeShape EntityType="appmedidoresModel.Lectura" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="appmedidoresModel.Medidor" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="appmedidoresModel.Usuarios" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <AssociationConnector Association="appmedidoresModel.FK_Lectura_Medidor" ManuallyRouted="false" />
+      <Diagram DiagramId="4fcf456fa3e24882aa0986d33f1fa268" Name="Diagram1">
+        <EntityTypeShape EntityType="appmedidorModel.Lectura" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="appmedidorModel.Medidor" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="appmedidorModel.Usuario" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

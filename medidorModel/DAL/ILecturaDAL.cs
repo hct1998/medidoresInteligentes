@@ -8,14 +8,14 @@ namespace medidorModel.DAL
 {
     public interface ILecturaDAL
     {
-        List<Lectura> ObtenerLectura();
+        List<Lectura> ObtenerLecturas();
 
         Lectura Obtener(int id_lectura);
 
 
-        void EliminarLectura(int id_lectura);
+        void EliminarLecturas(int id_lectura);
 
-        void AgregarLectura(Lectura lectura);
+        void AgregarLecturas(Lectura lectura);
 
 
 

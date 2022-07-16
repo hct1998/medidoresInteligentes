@@ -13,10 +13,10 @@ namespace medidorModel
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class appmedidoresEntities : DbContext
+    public partial class appmedidorEntities : DbContext
     {
-        public appmedidoresEntities()
-            : base("name=appmedidoresEntities")
+        public appmedidorEntities()
+            : base("name=appmedidorEntities")
         {
         }
     
@@ -25,8 +25,8 @@ namespace medidorModel
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Lectura> Lectura { get; set; }
-        public virtual DbSet<Medidor> Medidor { get; set; }
-        public virtual DbSet<Usuarios> Usuarios { get; set; }
+        public virtual DbSet<Lectura> Lecturas { get; set; }
+        public virtual DbSet<Medidor> Medidors { get; set; }
+        public virtual DbSet<Usuario> Usuarios { get; set; }
     }
 }

@@ -22,7 +22,7 @@ namespace medidorWeb
 
         protected void agregarBtn_Click(object sender, EventArgs e)
         {
-            Usuarios usuarios = new Usuarios();
+            Usuario usuarios = new Usuario();
             usuarios.nombre = this.nombreTxt.Text.Trim();
             usuarios.apellido = this.apellidoTxt.Text.Trim();
             usuarios.rut = this.rutTxt.Text.Trim();

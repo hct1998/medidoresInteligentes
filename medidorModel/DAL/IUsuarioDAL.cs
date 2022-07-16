@@ -8,15 +8,15 @@ namespace medidorModel.DAL
 {
     public interface IUsuarioDAL
     {
-        List<Usuarios> ObtenerUsuarios();
+        List<Usuario> ObtenerUsuarios();
 
-        Usuarios Obtener(int id_usuario);
+        Usuario Obtener(int id_usuario);
 
-        void AgregarUsuarios(Usuarios usuarios);
+        void AgregarUsuarios(Usuario usuarios);
 
         void EliminarUsuarios(int id_usuario);
 
-        void Actualizar(Usuarios a);
+        void Actualizar(Usuario a);
 
 
     }

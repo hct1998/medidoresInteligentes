@@ -12,7 +12,7 @@ namespace medidorModel
     using System;
     using System.Collections.Generic;
     
-    public partial class Usuarios
+    public partial class Usuario
     {
         public int id_usuario { get; set; }
         public string nombre { get; set; }
