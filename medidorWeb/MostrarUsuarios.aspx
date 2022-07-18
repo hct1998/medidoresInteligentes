@@ -26,7 +26,7 @@
                                 <ItemTemplate>
                                     <asp:Button CssClass="btn btn-danger" runat="server"
                                         CommandName="eliminar" Text="Eliminar"
-                                        CommandArgument='<%#Eval("Id") %>' />
+                                        CommandArgument='<%#Eval("id_usuario") %>' />
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
