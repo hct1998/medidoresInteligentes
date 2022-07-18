@@ -1,16 +1,47 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgregarLectura.aspx.cs" Inherits="medidorWeb.AgregarLectura" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="AgregarLectura.aspx.cs" Inherits="medidorWeb.AgregarLectura" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header bg-black text-white">
+                    <h3>Agregar Lecturas</h3>
+                </div>
+                <div class="card-body">
+                   <div class="form_group">
+                        <label for="id_medidorDDL">Id Medidor</label>
+                        <asp:DropDownList ID="id_medidorDDL" runat="server"></asp:DropDownList>
+                    </div>
+                  
+                    
+                </div>
+                    <div class="form-group">
+                        <label for="fechaTxt">Fecha</label>
+                        <asp:TextBox ID="fechaTxt" CssClass="form-control" runat="server"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label for="consumoTxt">Consumo</label>
+                        <asp:TextBox ID="consumoTxt" CssClass="form-control" runat="server"></asp:TextBox>
+                    </div>
+                    
+                    
+                   
+                   
+                    
+                 
+                    
+                </div>
+            </div>
         </div>
-    </form>
-</body>
-</html>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</asp:Content>
