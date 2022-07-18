@@ -5,5 +5,7 @@
     <siteMapNode url="MostrarUsuarios.aspx" title="Mostrar Usuarios"  description="" />
     <siteMapNode url="AgregarLectura.aspx" title="Agregar Lectura"  description="" />
     <siteMapNode url="MostrarLecturas.aspx" title="Mostrar Lectura"  description="" />
+    <siteMapNode url="AgregarMedidor.aspx" title="Agregar Medidor"  description="" />
+    <siteMapNode url="MostrarMedidores.aspx" title="Mostrar Medidores"  description="" />
   </siteMapNode>
 </siteMap>

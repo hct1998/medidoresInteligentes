@@ -75,9 +75,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AgregarLectura.aspx" />
+    <Content Include="AgregarMedidor.aspx" />
     <Content Include="CrearUsuario.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="MostrarLecturas.aspx" />
+    <Content Include="MostrarMedidores.aspx" />
     <Content Include="MostrarUsuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -88,6 +90,13 @@
     </Compile>
     <Compile Include="AgregarLectura.aspx.designer.cs">
       <DependentUpon>AgregarLectura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarMedidor.aspx.cs">
+      <DependentUpon>AgregarMedidor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarMedidor.aspx.designer.cs">
+      <DependentUpon>AgregarMedidor.aspx</DependentUpon>
     </Compile>
     <Compile Include="CrearUsuario.aspx.cs">
       <DependentUpon>CrearUsuario.aspx</DependentUpon>
@@ -109,6 +118,13 @@
     </Compile>
     <Compile Include="MostrarLecturas.aspx.designer.cs">
       <DependentUpon>MostrarLecturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarMedidores.aspx.cs">
+      <DependentUpon>MostrarMedidores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarMedidores.aspx.designer.cs">
+      <DependentUpon>MostrarMedidores.aspx</DependentUpon>
     </Compile>
     <Compile Include="MostrarUsuarios.aspx.cs">
       <DependentUpon>MostrarUsuarios.aspx</DependentUpon>

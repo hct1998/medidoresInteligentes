@@ -14,6 +14,9 @@
                   
                     
                 </div>
+
+
+
                    
                     <div class="form-group">
                         <label for="consumoTxt">Consumo</label>
@@ -21,6 +24,9 @@
                     </div>
                     
                     
+
+
+
                   <asp:Button runat="server" CssClass="btn btn-secondary" OnClick="ingresarBtn_Click" ID="ingresarBtn" Text="Ingresar" />
 
                    
