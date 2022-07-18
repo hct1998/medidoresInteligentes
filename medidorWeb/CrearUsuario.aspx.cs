@@ -20,7 +20,9 @@ namespace medidorWeb
 
         }
 
-        protected void agregarBtn_Click(object sender, EventArgs e)
+     
+
+        protected void agregarBtn_Click1(object sender, EventArgs e)
         {
             Usuario usuarios = new Usuario();
             usuarios.nombre = this.nombreTxt.Text.Trim();
@@ -33,8 +35,5 @@ namespace medidorWeb
             Response.Redirect("MostrarUsuarios.aspx");
 
         }
-
-
-
     }
 }

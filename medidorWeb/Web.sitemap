@@ -2,6 +2,8 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="Default.aspx" title=""  description="">
     <siteMapNode url="CrearUsuario.aspx" title="Crear Usuario"  description="" />
-    <siteMapNode url="" title=""  description="" />
+    <siteMapNode url="MostrarUsuarios.aspx" title="Mostrar Usuarios"  description="" />
+    <siteMapNode url="AgregarLectura.aspx" title="Agregar Lectura"  description="" />
+    <siteMapNode url="MostrarLecturas.aspx" title="Mostrar Lectura"  description="" />
   </siteMapNode>
 </siteMap>

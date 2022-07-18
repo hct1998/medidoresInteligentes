@@ -77,6 +77,7 @@
     <Content Include="AgregarLectura.aspx" />
     <Content Include="CrearUsuario.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="MostrarLecturas.aspx" />
     <Content Include="MostrarUsuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -101,6 +102,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarLecturas.aspx.cs">
+      <DependentUpon>MostrarLecturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarLecturas.aspx.designer.cs">
+      <DependentUpon>MostrarLecturas.aspx</DependentUpon>
     </Compile>
     <Compile Include="MostrarUsuarios.aspx.cs">
       <DependentUpon>MostrarUsuarios.aspx</DependentUpon>

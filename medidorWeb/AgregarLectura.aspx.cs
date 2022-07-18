@@ -1,4 +1,5 @@
-﻿using medidorModel.DAL;
+﻿using medidorModel;
+using medidorModel.DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,21 @@ namespace medidorWeb
                 this.id_medidorDDL.DataBind();
             }
 
+        }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ingresarBtn_Click(object sender, EventArgs e)
+        {
+            Lectura lectura = new Lectura();
+            lectura.id_medidor = Convert.ToInt32(this.id_medidorDDL.SelectedItem.Value);
+            lectura.consumo = this.consumoTxt.Text.Trim();
+
+            this.lecturaDAL.AgregarLecturas(lectura);
+            Response.Redirect("MostrarLecturas.aspx");
         }
     }
 }

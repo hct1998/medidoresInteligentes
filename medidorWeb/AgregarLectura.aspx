@@ -14,17 +14,15 @@
                   
                     
                 </div>
-                    <div class="form-group">
-                        <label for="fechaTxt">Fecha</label>
-                        <asp:TextBox ID="fechaTxt" CssClass="form-control" runat="server"></asp:TextBox>
-                    </div>
+                   
                     <div class="form-group">
                         <label for="consumoTxt">Consumo</label>
                         <asp:TextBox ID="consumoTxt" CssClass="form-control" runat="server"></asp:TextBox>
                     </div>
                     
                     
-                   
+                  <asp:Button runat="server" CssClass="btn btn-secondary" OnClick="ingresarBtn_Click" ID="ingresarBtn" Text="Ingresar" />
+
                    
                     
                  
